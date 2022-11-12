@@ -8,10 +8,10 @@ const resp = (error, data) => {
 
 const response = {
   success: (data, res) => {
-    res.status(400).send(resp(false, data));
+    res.send(resp(false, data));
   },
   error: (error, res) => {
-    res.status(400).send(resp(true, error));
+    res.send(resp(true, error));
   },
 };
 

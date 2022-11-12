@@ -26,6 +26,7 @@ const barang = {
           "satuan.harga"
         )
         .where("barang.nama_barang", "like", `%${nama_barang.toUpperCase()}%`);
+      //res.send("ada");
       response.success(detailBarang, res);
     }
     if (kode_barang) {
